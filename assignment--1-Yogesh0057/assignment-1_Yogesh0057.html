@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assignment-1_Yogesh0057.css">
+    <title>Search and filter</title>
+</head>
+
+<body>
+    <div class="head-bar">
+        <div class="logo">
+            e!
+        </div>
+        <div class="buttons">
+            <button class="btn1">Login</button>
+            <button class="btn2">Create an account</button>
+        </div>
+    </div>
+    <div class="head-content">
+        Breakfast Places in Mumbai
+    </div>
+    <div class="side-bar">
+        <div class="filter">
+            Filter
+        </div>
+        <div class="filter-location">
+            Select Location
+        </div>
+        <div class="filter-search">
+            <select name="location" class="filter-search-box">
+                <option value="0" disabled selected>Select Location</option>
+                <option value="1">Chennai</option>
+                <option value="2">Trichy</option>
+            </select>
+        </div>
+        <div class="cuisine">
+            Cuisine
+        </div>
+        <!--Taken from web-->
+
+        <div class="cuisine-check">
+            <!--<label class="container">North Indian
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+                <input type="checkbox">
+                South Indian
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+                <input type="checkbox">
+                Chinese
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+                <input type="checkbox">
+                Fast Food
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+                <input type="checkbox">
+                Street Food
+                <span class="checkmark"></span>
+            </label><br>-->
+
+            <input type="checkbox" id="north">
+            <label for="north"> North Indian</label><br>
+            <input type="checkbox" id="south">
+            <label for="south"> South Indian </label><br>
+            <input type="checkbox" id="chinese">
+            <label for="chinese"> Chinese </label><br>
+            <input type="checkbox" id="fast">
+            <label for="fast"> Fast Food </label><br>
+            <input type="checkbox" id="street">
+            <label for="street"> Street Food </label> <br>
+        </div>
+        <div class="cost">
+            Cost For Two
+        </div>
+        <div class="cost-radio">
+            <input type="radio" id="radio1" name="radio"><label for="radio1"> Less than 500</label> <br>
+            <input type="radio" id="radio2" name="radio"><label for="radio2"> 500 to 1000</label><br>
+            <input type="radio" id="radio3" name="radio" ><label for="radio3"> 1000 to 1500</label> <br>
+            <input type="radio" id="radio4" name="radio"><label for="radio4"> 1500 to 2000</label> <br>
+            <input type="radio" id="radio5" name="radio"><label for="radio5"> 2000+</label> <br>
+        </div>
+        <div class="sort">
+            Sort
+        </div>
+        <div class="sort-radio">
+            <input type="radio" id="radio6" name="radio-1"><label for="radio6"> Price low to high</label> <br>
+            <input type="radio" id="radio7" name="radio-1"><label for="radio7"> Price high to low</label><br>
+        </div>
+    </div>
+    <div class="result-bar">
+        <div class="result-one">
+            <div class="result-one-left">
+                <img src="img6.png" style="height: 120px; width:120px; border-radius: 25%;">
+            </div>
+            <div class="result-one-right">
+                <div class="one-right-head">
+                    The Big Chill Cakery
+                </div>
+                <div class="one-right-mid">
+                    FORT
+                </div>
+                <div class="one-right-bottom">
+                    Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                </div>
+            </div>
+            <div class="result-one-foot">
+                <div class="one-foot-left">
+                    CUISINES: <br><br>
+                    COST FOR TWO: <br>
+                </div>
+                <div class="one-foot-right">
+                    Bakery <br><br>
+                    ₹700 <br>
+                </div>
+            </div>
+        </div>
+        <div class="result-two">
+            <div class="result-two-left">
+                <img src="img6.png" style="height: 120px; width:120px; border-radius: 25%;">
+            </div>
+            <div class="result-two-right">
+                <div class="two-right-head">
+                    The Bake Shop
+                </div>
+                <div class="two-right-mid">
+                    FORT
+                </div>
+                <div class="two-right-bottom">
+                    Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                </div>
+            </div>
+            <div class="result-two-foot">
+                <div class="two-foot-left">
+                    CUISINES: <br><br>
+                    COST FOR TWO: <br>
+                </div>
+                <div class="two-foot-right">
+                    Bakery <br><br>
+                    ₹700 <br>
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <button class="page0" disabled style="opacity: 40%;"><</button>
+            <button class="page1">1</button>
+            <button class="page2">2</button>
+            <button class="page3">3</button>
+            <button class="page4">4</button>
+            <button class="page5">5</button>
+            <button class="pageN">></button>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+.bg img{
+    display: inline-block;
+    height: 70%;
+    width: 100%;
+    
+}
+.top{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h3{
+    color: red;
+    background-color: white;
+    margin: 0px;
+    padding: 26px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 110px
+
+}
+.header-content p{
+    font-size: 20px;
+    /* text-align: center; */
+    color: white;
+    font-family: arial;
+    font-weight: bolder
+    
+}
+.search{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.sub{
+    margin-left: 115px;
+}
+.sub h2{
+    color:#192F60;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+.sub p{
+    color: #8C96AB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+/*.content{
+    display: inline-block;
+    margin-left: 30px;
+    border-style: solid;
+    height: 160px;
+    width: 360px;
+}
+.content img{
+    display: inline-block;
+}
+.content-right{
+    display: inline-block;
+    margin-left: -260px;
+    margin-top: 30px;
+}
+.content-right h4{
+    
+    text-align: center;
+    margin: 75px;
+
+}
+.content-right p{
+    text-align: center;
+    margin: 75px;
+}*/
+
+/*.....................................*/
+
+/*.content{
+    margin-left: 30px;
+    border-style: solid;
+    height: 160px;
+    width: 360px;
+    display: inline-block;
+}
+.q1{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.content-right{
+    float: right;
+}
+.content-right p{
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.content-right h4{
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+.row{
+    display: inline-block;
+}*/
+
+/***************************************/
+
+.row{ 
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.content{
+    display: inline-block;
+    width: 360px;
+    height: 160px;
+    box-shadow: 5px 5px 5px orangered;
+    margin: 15px;  
+}
+
+.content-left{
+    display: inline-block;
+    
+}
+
+.content-right{
+    display:inline-block;
+    vertical-align: top;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.content-head{
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #192F60;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.content-body{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8C96AB; 
+    width: 150px;
+    padding-left: 10px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <title>Assignment 3</title>
+</head>
+
+<body>
+
+    <script>
+        class restaurantManager {
+            restaurantList = [{
+                name: 'A1',
+                address: 'xyz',
+                city: 'Trichy',
+            },
+            {
+                name: 'redChilli',
+                address: 'abc',
+                city: 'Thanjavur',
+            },
+            {
+                name: 'greenLeaf',
+                address: 'def',
+                city: 'Madurai',
+            },
+            {
+                name: 'templeINN',
+                address: 'pqr',
+                city: 'Chennai',
+            },
+            {
+                name: 'bananaLeaf',
+                address: 'mno',
+                city: 'Chennai'
+            },
+            {
+                name: 'hotelLeaf',
+                address: 'cba',
+                city: 'Trichy'
+            },
+            {
+                name: 'rushiINN',
+                address: 'fed',
+                city: 'Madurai'
+            }];
+
+
+            printAllRestaurantNames = (names) => {
+                console.log("The name of restaurants are:");
+                return this.restaurantList.map(names => names.name);
+            };
+
+
+            filterRestaurantByCity = (cityfilter) => {
+                console.log("The name of restaurant in" + " " + cityfilter + " " + "are")
+                return this.restaurantList.filter(cityfil => cityfil.city == cityfilter);
+            }
+
+
+
+
+        }
+
+        class punjabiTadka {
+
+
+
+
+            totalOrders() {
+
+                const orderData = {
+                    'Below 500': 20,
+                    '500-1000': 29,
+                    '1000-1500': 30,
+                    '1500-2000': 44,
+                    'Above 2000': 76
+                };
+                var values = [];
+                var sum = 0;
+                for (var property in orderData) {
+                    values.push(orderData[property]);
+                }
+                for (let i = 0; i < values.length; i++) {
+                    sum += values[i];
+                }
+
+                return "Total number of orders placed = " + sum;
+            }
+
+            orderProportion() {
+
+                const orderData = {
+                    'Below 500': 20,
+                    '500-1000': 29,
+                    '1000-1500': 30,
+                    '1500-2000': 44,
+                    'Above 2000': 76
+                };
+                var orders = [];
+                for (var property in orderData) {
+                    orders.push(property);
+                }
+                return "Total number of order proportions = " + orders.length;
+
+            }
+            orderPercentage() {
+
+
+                const orderData = {
+                    'Below 500': 20,
+                    '500-1000': 29,
+                    '1000-1500': 30,
+                    '1500-2000': 44,
+                    'Above 2000': 76
+                };
+                var total = 0;
+                var keyss = [];
+                for (var property in orderData) {
+                    keyss.push(orderData[property]);
+                }
+                for (let j = 0; j < keyss.length; j++) {
+                    total += keyss[j];
+                }
+
+                var orr = [];
+                for (var property in orderData) {
+                    orr.push(property);
+                }
+
+                const arr = [];
+                for (let i = 0; i < orderData.length; i++) {
+                    arr.push = {
+                        'id': i + 1,
+                        'order': orr[i],
+                        'orderpercentage': ((orderData[item[i]] / total) * 100).toFixed(2),
+                        'Restaurant': 'Punjabi Tadka'
+                    }
+                }
+                //c) 
+                const response = orr.map((item, index) => {
+                    return {
+                        'id': index + 1,
+                        'restaurant': 'Punjabi Tadka',
+                        'order': item,
+                        'order percentage': ((orderData[item] / total) * 100).toFixed(2)
+                    }
+                })
+                console.log(arr)
+                console.log(response)
+            }
+
+        }
+
+        var n = new restaurantManager();
+        console.log(n.printAllRestaurantNames());
+        console.log(n.filterRestaurantByCity('Chennai'));
+
+        var m = new punjabiTadka();
+        console.log(m.totalOrders());
+        console.log(m.orderProportion());
+        console.log(m.orderPercentage());
+
+    </script>
+
+
+</body>
+
+</html>
